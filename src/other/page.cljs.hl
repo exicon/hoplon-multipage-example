@@ -1,0 +1,12 @@
+(page "other/page.html")
+
+(html
+  (head (title "other/page"))
+  (body
+    (h1 "/other/page.html page")
+
+    (a :href "/page.html"
+       "Go to /page.html page")
+    "|"
+    (a :href "/unique.html"
+       "Go to /unique.html page")))
