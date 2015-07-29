@@ -51,6 +51,13 @@ GET http://localhost:3000/other/other/out/cljs_deps.js 404 (Not Found)
 ClojureScript could not load :main, did you forget to specify :asset-path?
 ```
 
+This is the most promising lead for fixing the problem, because it shows
+that the `/other` directory level is duplicated.
+
+If we take the extra level out, we can access the correct file:
+http://localhost:3000/other/out/goog/base.js
+
+
 #### [/page.html](http://localhost:3000/page.html)
 
 We see the content of the page but we get these errors:

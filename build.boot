@@ -16,6 +16,6 @@
 
 (deftask dev "" []
   (comp (serve) (watch) (hoplon)
-    (cljs :optimizations :advanced
+    (cljs :optimizations :none
           :source-map true)
     (speak :theme "woodblock")))
